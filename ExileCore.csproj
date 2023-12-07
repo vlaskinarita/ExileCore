@@ -1,0 +1,86 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>ExileCore</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>netcoreapp8.0</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Build" Version="17.8.3" />
+    <PackageReference Include="Microsoft.Build.Utilities.Core" Version="17.8.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="ClickableTransparentOverlay">
+      <HintPath>..\PoEHelper\ClickableTransparentOverlay.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Mathematics">
+      <HintPath>..\PoEHelper\SharpDX.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog">
+      <HintPath>..\PoEHelper\Serilog.dll</HintPath>
+    </Reference>
+    <Reference Include="ImGui.NET">
+      <HintPath>..\PoEHelper\ImGui.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Vanara.PInvoke.User32">
+      <HintPath>..\PoEHelper\Vanara.PInvoke.User32.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\PoEHelper\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="GameOffsets">
+      <HintPath>..\PoEHelper\GameOffsets.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.XAudio2">
+      <HintPath>..\PoEHelper\SharpDX.XAudio2.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX">
+      <HintPath>..\PoEHelper\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build.Utilities.Core" />
+    <Reference Include="Microsoft.Build.Framework" />
+    <Reference Include="Microsoft.Build" />
+    <Reference Include="MoreLinq">
+      <HintPath>..\PoEHelper\MoreLinq.dll</HintPath>
+    </Reference>
+    <Reference Include="Vanara.PInvoke.DwmApi">
+      <HintPath>..\PoEHelper\Vanara.PInvoke.DwmApi.dll</HintPath>
+    </Reference>
+    <Reference Include="Vanara.PInvoke.Kernel32">
+      <HintPath>..\PoEHelper\Vanara.PInvoke.Kernel32.dll</HintPath>
+    </Reference>
+    <Reference Include="ProcessMemoryUtilities">
+      <HintPath>..\PoEHelper\ProcessMemoryUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Vanara.PInvoke.Shared">
+      <HintPath>..\PoEHelper\Vanara.PInvoke.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Caching">
+      <HintPath>..\PoEHelper\System.Runtime.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="SixLabors.ImageSharp">
+      <HintPath>..\PoEHelper\SixLabors.ImageSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="JM.LinqFaster">
+      <HintPath>..\PoEHelper\JM.LinqFaster.dll</HintPath>
+    </Reference>
+    <Reference Include="Vanara.PInvoke.Multimedia">
+      <HintPath>..\PoEHelper\Vanara.PInvoke.Multimedia.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Sinks.File">
+      <HintPath>..\PoEHelper\Serilog.Sinks.File.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build.Locator">
+      <HintPath>..\PoEHelper\Microsoft.Build.Locator.dll</HintPath>
+    </Reference>
+    <Reference Include="Vanara.Core">
+      <HintPath>..\PoEHelper\Vanara.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

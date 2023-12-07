@@ -1,0 +1,37 @@
+namespace ExileCore.Shared.Enums;
+
+public enum ModType
+{
+	Prefix = 1,
+	Suffix,
+	Unique,
+	Nemesis,
+	Corrupted,
+	BloodLines,
+	Torment,
+	Tempest,
+	Talisman,
+	Enchantment,
+	EssenceMonster,
+	Unused,
+	Bestiary,
+	DelveArea,
+	SynthesisA,
+	SynthesisGlobals,
+	SynthesisBonus,
+	Blight,
+	BlightTower,
+	MonsterAffliction,
+	FlaskEnchantmentEnkindling,
+	FlaskEnchantmentInstilling,
+	ExpeditionLogbook,
+	ScourgeUpside,
+	ScourgeDownside,
+	ScourgeMap,
+	Unused2,
+	ExarchImplicit,
+	EaterImplicit,
+	Unused3,
+	WeaponTree,
+	WeaponTreeRecombined
+}
