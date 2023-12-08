@@ -1,5 +1,3 @@
-using SharpDX;
-
 namespace ExileCore.PoEMemory.Elements.InventoryElements;
 
 public class FlaskInventoryItem : NormalInventoryItem

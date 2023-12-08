@@ -1,12 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Windows.Forms;
 using ImGuiNET;
 using Newtonsoft.Json;
-using SharpDX;
-
 namespace ExileCore.Shared.Nodes;
 
 public class HotkeyNode

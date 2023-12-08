@@ -16,16 +16,7 @@ public class MsBuildLogger : Logger
 
 	public override void Initialize(IEventSource eventSource)
 	{
-		//IL_0034: Unknown result type (might be due to invalid IL or missing references)
-		//IL_003e: Expected O, but got Unknown
-		//IL_0046: Unknown result type (might be due to invalid IL or missing references)
-		//IL_0050: Expected O, but got Unknown
-		//IL_0058: Unknown result type (might be due to invalid IL or missing references)
-		//IL_0062: Expected O, but got Unknown
-		//IL_006a: Unknown result type (might be due to invalid IL or missing references)
-		//IL_0074: Expected O, but got Unknown
-		//IL_007c: Unknown result type (might be due to invalid IL or missing references)
-		//IL_0086: Expected O, but got Unknown
+	
 		BuildDetails = new List<string>();
 		Targets = new List<BuildTarget>();
 		Errors = new List<BuildError>();

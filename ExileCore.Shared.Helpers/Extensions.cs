@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
 using System.Linq.Expressions;
-using System.Numerics;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using ExileCore.PoEMemory.MemoryObjects;
@@ -9,6 +6,9 @@ using ExileCore.Shared.Cache;
 using ExileCore.Shared.Enums;
 using GameOffsets.Native;
 using SharpDX;
+using Color = SharpDX.Color;
+using Point = SharpDX.Point;
+using RectangleF = SharpDX.RectangleF;
 
 namespace ExileCore.Shared.Helpers;
 

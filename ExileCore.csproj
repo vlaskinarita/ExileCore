@@ -1,29 +1,44 @@
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
-  <PropertyGroup>
-    <AssemblyName>ExileCore</AssemblyName>
-    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-    <UseWindowsForms>True</UseWindowsForms>
-    <TargetFramework>netcoreapp8.0</TargetFramework>
-    <PlatformTarget>x64</PlatformTarget>
-  </PropertyGroup>
-  <PropertyGroup>
-    <LangVersion>11.0</LangVersion>
-    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
-  </PropertyGroup>
-  <PropertyGroup />
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Build" Version="17.8.3" />
-    <PackageReference Include="Microsoft.Build.Utilities.Core" Version="17.8.3" />
-  </ItemGroup>
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net7.0-windows</TargetFramework>
+		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<NoWarn>SYSLIB0006,CS8981, CS0219, CA1416, CS0414, CS0169, CS0649</NoWarn>
+		<UseWindowsForms>True</UseWindowsForms>
+
+	
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<OutputPath>$(SolutionDir)bin\</OutputPath>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<OutputPath>$(SolutionDir)bin\</OutputPath>
+	</PropertyGroup>
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.Build" Version="15.1.548" />
+	  <PackageReference Include="Microsoft.Build.Utilities.Core" Version="15.1.548" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\GameOffset\GameOffsets.csproj" />
+	</ItemGroup>
   <ItemGroup>
     <Reference Include="ClickableTransparentOverlay">
       <HintPath>..\PoEHelper\ClickableTransparentOverlay.dll</HintPath>
     </Reference>
-    <Reference Include="SharpDX.Mathematics">
-      <HintPath>..\PoEHelper\SharpDX.Mathematics.dll</HintPath>
+    <Reference Include="Microsoft.Build.Locator">
+      <HintPath>bin\Microsoft.Build.Locator.dll</HintPath>
     </Reference>
     <Reference Include="Serilog">
-      <HintPath>..\PoEHelper\Serilog.dll</HintPath>
+      <HintPath>bin\Serilog.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Sinks.File">
+      <HintPath>bin\Serilog.Sinks.File.dll</HintPath>
     </Reference>
     <Reference Include="ImGui.NET">
       <HintPath>..\PoEHelper\ImGui.NET.dll</HintPath>
@@ -37,15 +52,6 @@
     <Reference Include="GameOffsets">
       <HintPath>..\PoEHelper\GameOffsets.dll</HintPath>
     </Reference>
-    <Reference Include="SharpDX.XAudio2">
-      <HintPath>..\PoEHelper\SharpDX.XAudio2.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpDX">
-      <HintPath>..\PoEHelper\SharpDX.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Build.Utilities.Core" />
-    <Reference Include="Microsoft.Build.Framework" />
-    <Reference Include="Microsoft.Build" />
     <Reference Include="MoreLinq">
       <HintPath>..\PoEHelper\MoreLinq.dll</HintPath>
     </Reference>
@@ -72,12 +78,6 @@
     </Reference>
     <Reference Include="Vanara.PInvoke.Multimedia">
       <HintPath>..\PoEHelper\Vanara.PInvoke.Multimedia.dll</HintPath>
-    </Reference>
-    <Reference Include="Serilog.Sinks.File">
-      <HintPath>..\PoEHelper\Serilog.Sinks.File.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Build.Locator">
-      <HintPath>..\PoEHelper\Microsoft.Build.Locator.dll</HintPath>
     </Reference>
     <Reference Include="Vanara.Core">
       <HintPath>..\PoEHelper\Vanara.Core.dll</HintPath>

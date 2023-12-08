@@ -1,13 +1,8 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Numerics;
-using System.Windows.Forms;
 using ExileCore.Shared;
 using ExileCore.Shared.Helpers;
 using MoreLinq.Extensions;
-using SharpDX;
 using Vanara.PInvoke;
 
 namespace ExileCore;
@@ -51,9 +46,14 @@ public class Input
 	[Obsolete]
 	public static SharpDX.Vector2 ForceMousePosition => WinApi.GetCursorPositionPoint();
 
-	public static System.Numerics.Vector2 ForceMousePositionNum => WinApi.GetCursorPositionPoint().ToVector2();
+    public static System.Numerics.Vector2 ForceMousePositionNum {
+        get {
+			var p2 = WinApi.GetCursorPositionPoint();
+            return p2.ToVector2();
+        }
+    }
 
-	[Obsolete]
+    [Obsolete]
 	public static SharpDX.Vector2 MousePosition => MousePositionNum.ToSharpDx();
 
 	public static System.Numerics.Vector2 MousePositionNum { get; private set; }

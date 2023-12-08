@@ -1,10 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Numerics;
 using ExileCore.Shared;
 using ExileCore.Shared.Helpers;
 using ImGuiNET;
-using SharpDX;
+using Color = System.Drawing.Color;
+using RectangleF = System.Drawing.RectangleF;
 
 namespace ExileCore;
 
